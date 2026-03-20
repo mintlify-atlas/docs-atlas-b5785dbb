@@ -1,0 +1,137 @@
+{
+  "projectType": "saas",
+  "projectName": "Code Canvas Complete",
+  "projectDescription": "A browser-based full-stack coding workspace featuring a multi-language IDE, integrated AI assistant with tool-calling, WebContainer terminal, Arduino/hardware support, 3D/CAD editor, Supabase backend, and BYOK model routing.",
+  "theme": "palm",
+  "primaryColor": "#4595db",
+  "lightColor": "#5ebf9e",
+  "darkColor": "#0494dc",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": ["introduction", "quickstart", "local-development"]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/code-editor",
+              "features/ai-assistant",
+              "features/terminal",
+              "features/preview",
+              "features/git-integration",
+              "features/workflows",
+              "features/themes"
+            ]
+          },
+          {
+            "group": "Specialty Editors",
+            "pages": [
+              "editors/arduino",
+              "editors/3d-cad",
+              "editors/audio-video",
+              "editors/office",
+              "editors/scratch"
+            ]
+          },
+          {
+            "group": "Configuration",
+            "pages": [
+              "configuration/environment-variables",
+              "configuration/byok-providers",
+              "configuration/shell-executor",
+              "configuration/publishing"
+            ]
+          },
+          {
+            "group": "Deployment",
+            "pages": [
+              "deployment/vercel",
+              "deployment/koyeb",
+              "deployment/replit",
+              "deployment/lovable",
+              "deployment/supabase-edge-functions"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "AI Reference",
+        "groups": [
+          {
+            "group": "AI Assistant",
+            "pages": [
+              "ai-reference/overview",
+              "ai-reference/tool-functions",
+              "ai-reference/interactive-widgets",
+              "ai-reference/autonomy-mode"
+            ]
+          },
+          {
+            "group": "BYOK Providers",
+            "pages": [
+              "ai-reference/providers/openai",
+              "ai-reference/providers/anthropic",
+              "ai-reference/providers/gemini",
+              "ai-reference/providers/others"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Edge Functions",
+            "pages": [
+              "api-reference/ai-chat",
+              "api-reference/execute-code",
+              "api-reference/generate-image",
+              "api-reference/generate-music",
+              "api-reference/generate-3d",
+              "api-reference/compile-arduino",
+              "api-reference/github-proxy",
+              "api-reference/validate-api-key"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Multi-language browser-based IDE with syntax highlighting and IntelliSense",
+    "Integrated AI assistant with 30+ tool-calling actions (analyze, fix, refactor, test, git, etc.)",
+    "WebContainer-powered in-browser terminal with Node.js runtime",
+    "BYOK model routing for OpenAI, Anthropic, Gemini, DeepSeek, xAI, Cohere, OpenRouter, Perplexity",
+    "Arduino and hardware support: write, compile, and flash sketches from the browser",
+    "3D/CAD editor with text-to-3D AI generation from 6 providers",
+    "Audio/video editor with FFmpeg WASM processing",
+    "Git integration: commit, branch, import repos, publish projects",
+    "Workflow automation: create and run reusable automation workflows",
+    "Project sharing and subdomain publishing",
+    "Supabase backend with Auth, Edge Functions, and database",
+    "Interactive AI chat widgets (pomodoro, a11y audit, dependency visualizer, etc.)"
+  ],
+  "publicApiSurface": [
+    "POST /functions/v1/ai-chat — main AI assistant chat endpoint",
+    "POST /functions/v1/execute-code — run/compile code (Wandbox or container runner)",
+    "POST /functions/v1/generate-image — AI image generation",
+    "POST /functions/v1/generate-music — AI music/audio generation",
+    "POST /functions/v1/generate-3d — text-to-3D model generation",
+    "POST /functions/v1/compile-arduino — compile Arduino sketches",
+    "POST /functions/v1/github-proxy — GitHub API proxy",
+    "POST /functions/v1/validate-api-key — validate BYOK provider API keys",
+    "POST /functions/v1/fetch-ai-skills — fetch AI skills/MCP definitions",
+    "POST /functions/v1/ai-explain-symbol — explain code symbols",
+    "POST /functions/v1/ai-generate-tests — generate test cases",
+    "POST /functions/v1/manage-env-secrets — manage environment secrets",
+    "POST /functions/v1/send-collab-notification — send collaboration notifications",
+    "POST /functions/v1/session-recorder-sync — sync session recordings",
+    "POST /functions/v1/template-assistant — template switching assistant",
+    "POST /sessions (container runner) — create a new shell session",
+    "POST /execute (container runner) — execute command in a shell session"
+  ]
+}
